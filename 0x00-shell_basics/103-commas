@@ -1,4 +1,2 @@
 #!/bin/bash
-ls -1Ap | awk '{printf "%s%s", $0, (NR%3 ? ", " : "\n")}' | sed 's|/$|/,|' | sed '$s/,$/\n/'
-
-
+ls -amp | sort -d
